@@ -1,26 +1,25 @@
 import React from 'react';
+import { Switch, Route, Redirect } from "react-router-dom";
+
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import HomePage from './pages/homepage/homepage.component';
+import DrumPage from './pages/drumpage/drumpage.component';
+import GuitarPage from './pages/guitarpage/guitarpage.component';
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/drum" component={DrumPage} />
+          <Route exact path="/guitar" component={GuitarPage} />
+        </Switch>
+      </div>
+    )
+  }
 }
 
 export default App;
