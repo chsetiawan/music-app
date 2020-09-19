@@ -8,24 +8,11 @@ import DRUM_PARTS_DATA from '../../pages/drumpage/drum-parts.data';
 class Drum extends React.Component {
   constructor() {
     super();
-    
-    // this.escFunction = this.escFunction.bind(this);
 
     this.state = {
       drumParts: DRUM_PARTS_DATA
     }
   }
-  // escFunction(event){
-  //   if(event.keyCode === 27) {
-  //     console.log('yes');
-  //   }
-  // }
-  // componentDidMount(){
-  //   document.addEventListener("keydown", this.escFunction, false);
-  // }
-  // componentWillUnmount(){
-  //   document.removeEventListener("keydown", this.escFunction, false);
-  // }
 
   render() {
     return (
