@@ -3,9 +3,9 @@ import React from "react";
 import "./homepage.styles.scss";
 
 const HomePage = (props) => (
-  <div>
-    <button onClick={() => props.history.push("/drum")}>Drums</button>
-    <button onClick={() => props.history.push("/guitar")}>Guitar</button>
+  <div id="homepage-button-container">
+    <button id='homepage-button-drums' className='homepage-button' onClick={() => props.history.push("/drum")}>Drums</button>
+    <button id='homepage-button-guitar' className='homepage-button' onClick={() => props.history.push("/guitar")}>Guitar</button>
   </div>
 );
 
