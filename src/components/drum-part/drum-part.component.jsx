@@ -26,10 +26,10 @@ const DrumPart = ({ name, sound, num, keyCode }) => {
   };
 
   return (
-    <div>
-      <div className={`drum-part-div ${name}`} onMouseOver={playAudio} onClick={playAudio}>
+    <div className="drum-part-div">
+      <button className={`${name}`} onMouseOver={playAudio} onClick={playAudio}>
         <span>{name}</span>
-      </div>
+      </button>
       <audio className="audio-element">
         <source src={sound}></source>
       </audio>

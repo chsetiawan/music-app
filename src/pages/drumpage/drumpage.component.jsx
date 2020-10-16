@@ -17,8 +17,13 @@ const map = {
     { id: 6, shape: "circle", coords: [428, 290, 60], preFillColor: "" },
     { id: 7, shape: "circle", coords: [307, 445, 60], preFillColor: "" },
     { id: 8, shape: "circle", coords: [158, 505, 60], preFillColor: "" },
-    { id: 9, shape: "circle", coords: [319, 318, 60], preFillColor: "" },
+    //{ id: 9, shape: "circle", coords: [319, 318, 60], preFillColor: "" },
   ],
+};
+
+const playAudio2 = (num) => {
+  const audioEl = document.getElementsByClassName("audio-element")[num];
+  audioEl.play();
 };
 
 const DrumPage = () => (
@@ -29,7 +34,8 @@ const DrumPage = () => (
         "https://s3.amazonaws.com/images.static.steveweissmusic.com/products/images/uploads/29584_22183_popup.jpg"
       }
       map={map}
-      onClick={(map, index, e) => console.log("you clicked me")}
+      onClick={(map, index, e) => playAudio2(index)}
+      onMouseMove={(map, index, e) => playAudio2(index)}
       onImageClick={(e) => console.log("clicked")}
     />
   </div>
