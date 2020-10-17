@@ -1,13 +1,9 @@
-
-
 #homepage-button-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../images/homepage-wallpaper.jpeg');
-  background-size: cover;
-  
+
   .homepage-button {
     height: 25px;
   }

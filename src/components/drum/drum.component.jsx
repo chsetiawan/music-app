@@ -3,14 +3,14 @@ import React from 'react';
 import './drum.styles.scss';
 
 import DrumPart from '../drum-part/drum-part.component';
-import DRUM_DATA from '../../pages/drumpage/drum-parts.data';
+import DRUM_PARTS_DATA from '../../pages/drumpage/drum-parts.data';
 
 class Drum extends React.Component {
   constructor() {
     super();
 
     this.state = {
-      drumParts: DRUM_DATA.drumPartsData
+      drumParts: DRUM_PARTS_DATA
     }
   }
 
