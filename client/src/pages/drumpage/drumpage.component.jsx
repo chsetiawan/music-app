@@ -1,10 +1,22 @@
 import React from "react";
+import axios from 'axios';
 import ImageMapper from "react-image-mapper";
 
 import "./drumpage.styles.scss";
 
 import Drum from "../../components/drum/drum.component";
 import DRUM_DATA from "../drumpage/drum-parts.data";
+
+// const getDrumCoords = () => {
+//   axios.get('https://localhost:8080/')
+//     .then((res) => {
+//       console.log(`Drum coordinates have been received!`);
+//       return res.data;
+//     })
+//     .catch(() => {
+//       console.log(`Drum coordinates not received `);
+//     })
+// }
 
 const map = DRUM_DATA.drumCircleCoords;
 
